@@ -5,9 +5,11 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>アプリケーションスコープのテスト</title>
+        <title>クエリパラメータのテスト</title>
     </head>
     <body>
-        <h1><c:out value="${applicationScope.app_name}" /></h1>
+        <p>送信パラメータ：<%= request.getAttribute("q") %></p>
+        <p>送信パラメータ：<c:out value="${q}" /></p>
+        <p>送信パラメータ：${q}</p>
     </body>
 </html>
